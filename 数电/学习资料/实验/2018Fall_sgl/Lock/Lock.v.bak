@@ -1,0 +1,67 @@
+module Lock(number_input,delete_input,clear_input,clock_original,open_successful_output,open_failed_output);
+input[8:0]number_input;
+input delete_input;
+input clear_input;
+output open_successful_output;
+output open_failed_output;
+
+
+
+
+endmodule;
+
+
+
+module input_switch(number_input,delete_input,clear_input,clock,number_hex,input_signal);
+input[8:0] number_input;
+input delete_input, clear_input;
+input clock;
+output number_hex[3:0];
+output input_signal;
+
+always@(posedge clock)
+begin
+case(number_input)
+	9'b111111110: 
+		number_hex <= 4'd1;
+		input_signal <= 1;
+	9'b111111101: 
+		number_hex <= 4'd2;
+		input_signal <= 1;
+	9'b111111011: 
+		number_hex <= 4'd3;
+		input_signal <= 1;
+	9'b111110111: 
+		number_hex <= 4'd4;
+		input_signal <= 1;
+	9'b111101111: 
+		number_hex <= 4'd5;
+		input_signal <= 1;
+	9'b111011111: 
+		number_hex <= 4'd6;
+		input_signal <= 1;
+	9'b110111111: 
+		number_hex <= 4'd7;
+		input_signal <= 1;
+	9'b101111111: 
+		number_hex <= 4'd8;
+		input_signal <= 1;
+	9'b011111111: 
+		number_hex <= 4'd9;
+		input_signal <= 1;
+	else
+		number_hex <= 4'd0;
+		input_signal <= 0;
+end case
+	if(delete_input == 1)
+	begin
+		number_hex <= 4'd10;
+		input_signal <= 1;
+	end
+	else if(clear_input == 1)
+	begin
+		number_hex <= 4'd11;
+		input_signal <= 1;
+	end
+end		
+

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wangshuo\Desktop\EDA2\keyboard\simulation\modelsim
+vkeyboard1
+I4:HX9IG=;aX8BGhJiT=z91
+VnFhKE7B?cVAJj<@m>UjB>2
+Z1 dC:\Users\wangshuo\Desktop\EDA2\keyboard\simulation\modelsim
+w1388457683
+8keyboard_fast.vo
+Fkeyboard_fast.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 PLzI8NHz26PTmVk=WkfBi1
+!s85 0
+!s108 1388457801.616000
+!s107 keyboard_fast.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|keyboard_fast.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vkeyboard1_tb
+!i10b 1
+!s100 jeU=BNbl1b1=6WzPJo6Bn1
+I;HVG3U8ChF9XJClFQ9Pd^0
+Vj<e=jS:3iVVQfCC<;4Jz^2
+R1
+w1388457621
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1388457802.316000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard -O0

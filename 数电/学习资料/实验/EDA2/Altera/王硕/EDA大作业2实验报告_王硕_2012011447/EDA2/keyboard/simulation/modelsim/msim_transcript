@@ -1,0 +1,71 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do keyboard_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {keyboard_fast.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard1
+# 
+# Top level modules:
+# 	keyboard1
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard {C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard1_tb
+# 
+# Top level modules:
+# 	keyboard1_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  keyboard1_tb
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps keyboard1_tb 
+# Loading work.keyboard1_tb
+# Loading work.keyboard1
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from keyboard_v_fast.sdo
+# ** Warning: (vsim-3017) C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v(12): [TFMPC] - Too few port connections. Expected 6, found 4.
+# 
+#         Region: /keyboard1_tb/keyboard1_inst
+# ** Warning: (vsim-3722) C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v(12): [TFMPC] - Missing connection for port 'ctrl'.
+# 
+# ** Warning: (vsim-3722) C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v(12): [TFMPC] - Missing connection for port 'out'.
+# 
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from keyboard_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /keyboard1_tb File: C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: wangshuo  Hostname: WANGSHUO-THINK  ProcessID: 30936
+# 
+#           Attempting to use alternate WLF file "./wlft2tm9ex".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2tm9ex
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

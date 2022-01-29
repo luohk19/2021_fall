@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0\MyClock\simulation\modelsim
+vlightControl
+!i10b 1
+!s100 K0TSS<IW6Z2ZMhejWD<z>3
+IH6zPQjS3VLX4O5WK4XVDz1
+V2mOO8O0oWfEMi4AHGVVFJ1
+Z1 dC:\altera\13.0\MyClock\simulation\modelsim
+Z2 w1639406808
+Z3 8C:/altera/13.0/MyClock/MyClock.v
+Z4 FC:/altera/13.0/MyClock/MyClock.v
+L0 33
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1639997296.638000
+Z7 !s107 C:/altera/13.0/MyClock/MyClock.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0/MyClock|C:/altera/13.0/MyClock/MyClock.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+C:/altera/13.0/MyClock -O0
+nlight@control
+vsecControl
+!i10b 1
+!s100 `]4TPLafmNKh@dBG=1zXd0
+IePXML<N@JjPZmPj9ci39=3
+V`n<JkUmLami5iRM?eO<C:0
+R1
+R2
+R3
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10
+nsec@control
+vxiaodou
+!i10b 1
+!s100 n2icNYWmT>^jPhYea0=>F3
+IVZSe<:ec0LeH6KoWaZ:H:1
+Vj@Won?[G1[eGZ0CXHI^ab1
+R1
+R2
+R3
+R4
+L0 55
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10

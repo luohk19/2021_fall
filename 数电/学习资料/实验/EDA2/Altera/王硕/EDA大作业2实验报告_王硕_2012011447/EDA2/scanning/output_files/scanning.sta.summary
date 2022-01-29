@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clk_sys'
+Slack : -2.448
+TNS   : -27.137
+
+Type  : Slow Model Setup 'Divider:inst3|cnt[17]'
+Slack : -1.628
+TNS   : -8.989
+
+Type  : Slow Model Hold 'clk_sys'
+Slack : -2.454
+TNS   : -2.454
+
+Type  : Slow Model Hold 'Divider:inst3|cnt[17]'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_sys'
+Slack : -1.941
+TNS   : -28.653
+
+Type  : Slow Model Minimum Pulse Width 'Divider:inst3|cnt[17]'
+Slack : -0.742
+TNS   : -13.356
+
+Type  : Fast Model Setup 'clk_sys'
+Slack : -0.267
+TNS   : -0.782
+
+Type  : Fast Model Setup 'Divider:inst3|cnt[17]'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clk_sys'
+Slack : -1.463
+TNS   : -1.463
+
+Type  : Fast Model Hold 'Divider:inst3|cnt[17]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_sys'
+Slack : -1.380
+TNS   : -19.380
+
+Type  : Fast Model Minimum Pulse Width 'Divider:inst3|cnt[17]'
+Slack : -0.500
+TNS   : -9.000
+
+------------------------------------------------------------

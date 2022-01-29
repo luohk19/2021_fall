@@ -1,0 +1,55 @@
+module StateMachine
+(
+	input	clk, en, dir, reset,
+	output reg [3:0] out
+);
+
+
+	reg	[1:0] state;
+	
+	parameter S0 = 0, S1 = 1, S2 = 2, S3 = 3;
+
+	always @ (posedge clk or negedge reset) 
+	begin
+		if (!reset) begin
+			state <= S0;
+			out <= 4'b0001;
+		end
+		else if (en)
+			case (state)
+				S0:	begin
+					out <= 4'b0001;
+					if (dir)
+						state <= S1;
+					else
+						state <= S3;
+				end
+				S1:	begin
+					out <= 4'b0010;
+					if (dir)
+						state <= S2;
+					else
+						state <= S0;
+				end
+				S2:	begin
+					out <= 4'b0100;
+					if (dir)
+						state <= S3;
+					else
+						state <= S1;
+				end
+				S3: begin
+					out <= 4'b1000;
+					if (dir)
+						state <= S0;
+					else
+						state <= S2;
+				end
+				default: begin
+					out <= 4'b0001;
+					state <= S0;
+				end
+			endcase
+	end
+
+endmodule

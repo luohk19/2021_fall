@@ -1,0 +1,9 @@
+module vending_machine(
+	input money[2:0],
+	input good[2:0],
+	output warning[2:0],
+);
+
+
+
+endmodule

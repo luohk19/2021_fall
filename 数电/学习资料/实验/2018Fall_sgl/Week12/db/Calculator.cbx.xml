@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Calculator">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calculator|Multiply4:multiply_mux|lpm_mult:Mult0" CBX_FILE_NAME="mult_a7t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calculator|show_control_ten_continuously:show_mux|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_dgm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calculator|show_control_ten_continuously:show_mux|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_agm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calculator|show_control_ten_continuously:show_mux|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_d8m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

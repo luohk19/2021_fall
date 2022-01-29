@@ -1,0 +1,14 @@
+
+State Machine - |charge1|timing:inst3|flag2
+Name flag2.00 flag2.10 flag2.01 
+flag2.00 0 0 0 
+flag2.01 1 0 1 
+flag2.10 1 1 0 
+
+State Machine - |charge1|timing:inst3|current
+Name current.a3 current.a2 current.a1 current.bc current.a4 
+current.bc 0 0 0 0 0 
+current.a1 0 0 1 1 0 
+current.a2 0 1 0 1 0 
+current.a3 1 0 0 1 0 
+current.a4 0 0 0 1 1 

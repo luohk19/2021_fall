@@ -1,0 +1,45 @@
+module MainControl(sel,i0,i1,ans_r,ans_s)
+input[1:0]sel;
+input[3:0]i0,i1;
+output[7:0]ans_r;
+output ans_s;
+reg [7:0]ans_r;
+reg ans_s;
+always@(i0 or i1 or sel)
+begin
+	case(sel)
+	2'b00:assign ans_r = 0;assign ans_s = 0;
+	2'b01:Plus4(i0,i1,ans_r,ans_s);
+	2'b10:Minus4(i0,i1,ans_r,ans_s);
+	2'b11:Multiply(i0,i1,ans_r);assign ans_s = 0;
+
+
+module Plus4(i0,i1,sum,add);
+input[3:0]i0,i1;
+output[3:0]sum;
+output add;
+assign sum = i0 + i1;
+if(i0+i1>=10000)
+	assign add = 1;
+else
+	assign add = 0;
+endmodule
+
+module Minus4(i0,i1,sum,borrow);
+input[3:0]i0,i1;
+output[7:0]sum;
+output borrow;
+assign sum = i0 - i1;
+if(i0>i1)
+	assign borrow = 1;
+else
+	assign borrow = 0;
+endmodule
+
+module Multiply4(i0,i1,sum);
+input[3:0]i0,i1;
+output[7:0]sum;
+assign sum = i0 * i1;
+endmodule
+
+

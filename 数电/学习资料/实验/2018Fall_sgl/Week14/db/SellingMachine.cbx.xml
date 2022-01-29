@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SellingMachine">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SellingMachine|show_control_ten_continuously:show_mux|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SellingMachine|show_control_ten_continuously:show_mux|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_jhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SellingMachine|show_control_ten_continuously:show_mux|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_m9m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

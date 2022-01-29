@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'counter:count_mux|clk'
+Slack : -30.928
+TNS   : -113.738
+
+Type  : Slow 1200mV 85C Model Setup 'counter_great:count_mux_great|clk'
+Slack : -5.083
+TNS   : -71.348
+
+Type  : Slow 1200mV 85C Model Setup 'clk_original'
+Slack : -3.422
+TNS   : -113.211
+
+Type  : Slow 1200mV 85C Model Hold 'clk_original'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counter_great:count_mux_great|clk'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counter:count_mux|clk'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_original'
+Slack : -3.000
+TNS   : -80.324
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter_great:count_mux_great|clk'
+Slack : -1.487
+TNS   : -40.149
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter:count_mux|clk'
+Slack : -1.487
+TNS   : -16.357
+
+Type  : Slow 1200mV 0C Model Setup 'counter:count_mux|clk'
+Slack : -28.153
+TNS   : -103.135
+
+Type  : Slow 1200mV 0C Model Setup 'counter_great:count_mux_great|clk'
+Slack : -4.755
+TNS   : -65.465
+
+Type  : Slow 1200mV 0C Model Setup 'clk_original'
+Slack : -3.184
+TNS   : -97.565
+
+Type  : Slow 1200mV 0C Model Hold 'clk_original'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counter_great:count_mux_great|clk'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counter:count_mux|clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_original'
+Slack : -3.000
+TNS   : -80.324
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter_great:count_mux_great|clk'
+Slack : -1.487
+TNS   : -41.195
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter:count_mux|clk'
+Slack : -1.487
+TNS   : -16.357
+
+Type  : Fast 1200mV 0C Model Setup 'counter:count_mux|clk'
+Slack : -12.532
+TNS   : -45.184
+
+Type  : Fast 1200mV 0C Model Setup 'counter_great:count_mux_great|clk'
+Slack : -1.651
+TNS   : -19.562
+
+Type  : Fast 1200mV 0C Model Setup 'clk_original'
+Slack : -0.902
+TNS   : -20.840
+
+Type  : Fast 1200mV 0C Model Hold 'clk_original'
+Slack : -0.157
+TNS   : -0.296
+
+Type  : Fast 1200mV 0C Model Hold 'counter_great:count_mux_great|clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counter:count_mux|clk'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_original'
+Slack : -3.000
+TNS   : -57.970
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter_great:count_mux_great|clk'
+Slack : -1.000
+TNS   : -27.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter:count_mux|clk'
+Slack : -1.000
+TNS   : -11.000
+
+------------------------------------------------------------

@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'input_switch:input_module|input_signal'
+Slack : -3.057
+TNS   : -63.452
+
+Type  : Slow 1200mV 85C Model Setup 'change_number:change_module|compare_signal'
+Slack : -1.451
+TNS   : -2.491
+
+Type  : Slow 1200mV 85C Model Hold 'input_switch:input_module|input_signal'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'change_number:change_module|compare_signal'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -10.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'input_switch:input_module|input_signal'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'change_number:change_module|compare_signal'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Setup 'input_switch:input_module|input_signal'
+Slack : -2.871
+TNS   : -59.027
+
+Type  : Slow 1200mV 0C Model Setup 'change_number:change_module|compare_signal'
+Slack : -1.256
+TNS   : -2.130
+
+Type  : Slow 1200mV 0C Model Hold 'input_switch:input_module|input_signal'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'change_number:change_module|compare_signal'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -10.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'input_switch:input_module|input_signal'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'change_number:change_module|compare_signal'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Fast 1200mV 0C Model Setup 'input_switch:input_module|input_signal'
+Slack : -0.774
+TNS   : -15.657
+
+Type  : Fast 1200mV 0C Model Setup 'change_number:change_module|compare_signal'
+Slack : -0.045
+TNS   : -0.045
+
+Type  : Fast 1200mV 0C Model Hold 'input_switch:input_module|input_signal'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'change_number:change_module|compare_signal'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -8.280
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'input_switch:input_module|input_signal'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'change_number:change_module|compare_signal'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

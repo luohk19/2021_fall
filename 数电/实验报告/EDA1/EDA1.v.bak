@@ -1,0 +1,15 @@
+module calculator(a,b,k,res);
+input[3:0] a;
+input[3:0] b;
+input[1:0] k;
+output[5:0] res;
+
+always@(*)
+	case(k)
+		2'b00: res=0;
+		2'b01: res=a+b;
+		2'b10: res=a-b;
+		2'b11: res=a*b;
+		endcase;
+endmodule
+	

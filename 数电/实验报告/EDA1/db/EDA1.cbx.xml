@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="EDA1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Block1|calculator:inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_6gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Block1|calculator:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_a7t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wangshuo\Desktop\EDA2\scanning\simulation\modelsim
+vscanner
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IG:bWOLEDPNj@mohNEQQV82
+V=dboQRcITTa7:W`UPnRQ01
+S1
+Z1 dC:\Users\wangshuo\Desktop\EDA2\scanning\simulation\modelsim
+w1388458850
+8scanning_fast.svo
+Fscanning_fast.svo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+o-sv -work work -O0
+!i10b 1
+!s100 ]^V7FM`@cj9_Ve_:UmJi]1
+!s105 scanning_fast_svo_unit
+!s85 0
+!s108 1388458876.109000
+!s107 scanning_fast.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|scanning_fast.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vscanning_tb
+!i10b 1
+!s100 nNaLz42z7FAd^5aGZjb@?2
+IdYcG5?gMIRcH7i[gBeN;L0
+VZLJMcKh;0<agmch[[W[]C0
+R1
+w1388458787
+8C:/Users/wangshuo/Desktop/EDA2/scanning/scanning_tb.v
+FC:/Users/wangshuo/Desktop/EDA2/scanning/scanning_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1388458877.760000
+!s107 C:/Users/wangshuo/Desktop/EDA2/scanning/scanning_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/scanning|C:/Users/wangshuo/Desktop/EDA2/scanning/scanning_tb.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/wangshuo/Desktop/EDA2/scanning -O0

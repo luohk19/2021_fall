@@ -1,0 +1,8 @@
+
+State Machine - |Lock|change_number:change_module|control_reg
+Name control_reg.0111 control_reg.0011 control_reg.0001 control_reg.1111 control_reg.0000 
+control_reg.0000 0 0 0 0 0 
+control_reg.0001 0 0 1 0 1 
+control_reg.0011 0 1 0 0 1 
+control_reg.0111 1 0 0 0 1 
+control_reg.1111 0 0 0 1 1 

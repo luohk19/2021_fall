@@ -1,0 +1,106 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wangshuo\Desktop\EDA2\keyboard\simulation\modelsim
+vDivider
+Ij=l`i]WebGYUe>BaT_14l1
+V;lSW_=PXG?fC5af<3ihS80
+Z1 dC:\Users\wangshuo\Desktop\EDA2\keyboard\simulation\modelsim
+w1388119289
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/Divider.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/Divider.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@divider
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard -O0
+!i10b 1
+!s100 ]32@6i[aYZ`lb[Sg4m]VS1
+!s85 0
+!s108 1388383645.548000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/Divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/Divider.v|
+!s101 -O0
+vdivider_mon
+IcTHOMY^Hb6]@G4Cc=Y?6U2
+V527:B];Oa2PdKYhFbOlVc0
+R1
+w1387973886
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/divider_mon.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/divider_mon.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 53S3GaeIFSB1GdgbGmL?C1
+!s85 0
+!s108 1388383647.473000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/divider_mon.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/divider_mon.v|
+!s101 -O0
+vkeyboard1_tb
+!i10b 1
+!s100 ^m]4[hMGJ7ThAF2WMU4_J0
+INQRYo78UjkBF3J[^O1=^h2
+Vj<e=jS:3iVVQfCC<;4Jz^2
+R1
+w1388383623
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1388383648.491000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/keyboard1_tb.v|
+!s101 -O0
+R3
+R4
+vmonitor
+IgA45;@=2O`aV1DLES@T9`0
+V01GfWdnIo0L]UhZXJa[OF0
+R1
+w1388119191
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/monitor.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/monitor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 NhF<aWjJWKl3>[hl5H_d=3
+!s85 0
+!s108 1388383646.950000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/monitor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/monitor.v|
+!s101 -O0
+vscanning
+I3G5hEd1cL[XUPil[35lAM0
+VTmBfQ6o3cBNJ7^aC0gSV12
+R1
+w1388119350
+8C:/Users/wangshuo/Desktop/EDA2/keyboard/scanning.v
+FC:/Users/wangshuo/Desktop/EDA2/keyboard/scanning.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 O[P;4NMZFAXTRi?GkdOF_2
+!s85 0
+!s108 1388383647.997000
+!s107 C:/Users/wangshuo/Desktop/EDA2/keyboard/scanning.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wangshuo/Desktop/EDA2/keyboard|C:/Users/wangshuo/Desktop/EDA2/keyboard/scanning.v|
+!s101 -O0

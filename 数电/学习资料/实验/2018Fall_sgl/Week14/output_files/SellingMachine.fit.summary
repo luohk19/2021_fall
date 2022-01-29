@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Dec 19 14:08:20 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : SellingMachine
+Top-level Entity Name : SellingMachine
+Family : Cyclone III
+Device : EP3C16Q240C8
+Timing Models : Final
+Total logic elements : 499 / 15,408 ( 3 % )
+    Total combinational functions : 489 / 15,408 ( 3 % )
+    Dedicated logic registers : 90 / 15,408 ( < 1 % )
+Total registers : 90
+Total pins : 25 / 161 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0\EDA1\simulation\qsim
+vBlock1
+Z1 !s100 Zn6WYaGaK]2?izNz=mFU62
+Z2 I_nJf5;Dz9`1BcB0C3hCYd0
+Z3 V[D0a`zSH6OK_LngA<ZeAZ0
+Z4 dD:\altera\13.0\EDA1\simulation\qsim
+Z5 w1639288949
+Z6 8EDA1.vo
+Z7 FEDA1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|EDA1.vo|
+Z10 o-work work -O0
+Z11 n@block1
+!i10b 1
+!s85 0
+Z12 !s108 1639288950.351000
+Z13 !s107 EDA1.vo|
+!s101 -O0
+vBlock1_vlg_vec_tst
+!i10b 1
+!s100 i^Kz>n0MgzVBN4[A`Dci73
+IAU96j0LKmce^NQ96LHKaT1
+Z14 V8EbEX^g@9e0ZUXjTWSm=l2
+R4
+R5
+Z15 8EDA1.vt
+Z16 FEDA1.vt
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1639288950.400000
+!s107 EDA1.vt|
+Z17 !s90 -work|work|EDA1.vt|
+!s101 -O0
+R10
+Z18 n@block1_vlg_vec_tst

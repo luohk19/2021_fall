@@ -1,0 +1,11 @@
+
+State Machine - |keyboard1|scanning:inst2|flag
+Name flag.111 flag.110 flag.101 flag.100 flag.011 flag.010 flag.001 flag.000 
+flag.000 0 0 0 0 0 0 0 0 
+flag.001 0 0 0 0 0 0 1 1 
+flag.010 0 0 0 0 0 1 0 1 
+flag.011 0 0 0 0 1 0 0 1 
+flag.100 0 0 0 1 0 0 0 1 
+flag.101 0 0 1 0 0 0 0 1 
+flag.110 0 1 0 0 0 0 0 1 
+flag.111 1 0 0 0 0 0 0 1 

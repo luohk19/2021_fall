@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\13.0\EDA2\simulation\modelsim
+vvending_machine
+!i10b 1
+!s100 VcL`bM?RT;=IjiEbA=X`<3
+IN?e@LPJoYDWn^;ik;6aXk2
+VmdQG<NmM_P_B22clYG[^C1
+Z1 dD:\altera\13.0\EDA2\simulation\modelsim
+w1637744897
+8D:/altera/13.0/EDA2/EDA2.v
+FD:/altera/13.0/EDA2/EDA2.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1639287981.282000
+!s107 D:/altera/13.0/EDA2/EDA2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/13.0/EDA2|D:/altera/13.0/EDA2/EDA2.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/altera/13.0/EDA2 -O0

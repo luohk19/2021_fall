@@ -1,0 +1,166 @@
+module timing 
+(
+input clk,
+input clk2,
+input [3:0] state,
+output reg [3:0] minute2,
+output reg [3:0] minute1,
+output reg on,
+output reg [11:0] cnt
+);
+
+
+reg [3:0] current;
+reg [3:0] next;
+reg [1:0] flag;
+reg [1:0]flag2;
+
+
+
+parameter bc=0,b1=1,b2=2,b3=3,b4=4,a1=5,a2=6,a3=7,a4=8;//空闲，待命，计时充电
+parameter s0=0,s1=1,s2=2,s3=3,s4=4,s5=5,s6=6,s7=7,s8=8;//0:0;1:5;2:10;3:15;4:20;5:5;6:10;7:15;8:20
+
+always @(posedge clk)
+current<=next;
+
+always @(*)//计时器的状态跳转
+case(current)
+	bc:
+	if(state==s5)
+			next=b0;
+	else if(state==s6)
+			next=b1;
+	else if(state==s7)
+			next=b2;
+	else if(state==s8)
+			next=b3;
+	else
+		next_state=idle;
+	
+	b0: next=a0;
+	b1: next=a1;
+	b2: next=a2;
+	b3: next=a3;
+	
+	a0:
+		if(state==s0)
+		next=bc;
+		else
+		next=a0;
+	
+	
+	a1:
+		if(state==s0)
+		next=bc;
+		else
+		next=a1;
+
+	a2:
+		if(state==s0)
+		next=bc;
+		else
+		next=a2;
+		
+	a3:	
+		if(state==s0)
+		next=bc;
+		else
+		next=a3;
+endcase
+
+
+always @(current)
+case(current)
+bc:flag=0;
+b0:flag=1;	
+b1:flag=1;
+b2:flag=1;
+b3:flag=1;
+a0:flag=2;
+a1:flag=2;
+a2:flag=2;
+a3:flag=2;
+default:flag=3;
+endcase
+
+
+always @(posedge clk2)
+
+case (state)
+	
+	s5:
+	if(cnt==0)
+		begin
+			if(flag2==0)
+				begin
+				flag2<=1;
+				cnt<=5;
+				end
+			else
+				flag2<=2;
+		end
+	else
+		cnt<=cnt-1;
+	
+	s6:
+	if(cnt==0)
+		begin
+			if(flag2==0)
+				begin
+				flag2<=1;
+				cnt<=10;
+				end
+			else
+				flag2<=2;
+		end
+	else
+		cnt<=cnt-1;
+
+	s7:
+	if(cnt==0)
+		begin
+				if(flag2==0)
+					begin
+					flag2<=1;
+					cnt<=30;
+					end
+				else
+					flag2<=2;
+		end
+	else
+		cnt<=cnt-1;
+
+	s8:
+	if(cnt==0)
+			begin
+			if(flag2==0)
+				begin
+					flag2<=2'1;
+					cnt<=40;
+				end
+			else
+			flag2<=2;
+			end
+	else
+		cnt<=cnt-1;	
+	
+	default:
+	begin
+		cnt<=0;
+		flag2<=0;
+	end
+endcase
+
+
+always @(*)//flag2=0,没有充，1：正在充，2：充完了。flag=0，无需冲，1需要
+if((flag==1&&flag2==0)||flag2==1||(flag==2&&flag2==0))
+on=1;
+else 
+on=0;
+
+always@(cnt)
+begin 
+minute1=cnt%10;
+minute2=(cnt-minute1)/10;
+end
+

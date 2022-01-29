@@ -1,0 +1,246 @@
+|Calculator
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN2
+i0[0] => i0[0].IN3
+i0[1] => i0[1].IN3
+i0[2] => i0[2].IN3
+i0[3] => i0[3].IN3
+i1[0] => i1[0].IN3
+i1[1] => i1[1].IN3
+i1[2] => i1[2].IN3
+i1[3] => i1[3].IN3
+ans_r[0] <= ans_r[0].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[1] <= ans_r[1].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[2] <= ans_r[2].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[3] <= ans_r[3].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[4] <= ans_r[4].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[5] <= ans_r[5].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[6] <= ans_r[6].DB_MAX_OUTPUT_PORT_TYPE
+ans_r[7] <= ans_r[7].DB_MAX_OUTPUT_PORT_TYPE
+btn_control[0] => ~NO_FANOUT~
+btn_control[1] => ~NO_FANOUT~
+show_num[0] <= show_control_ten_continuously:show_mux.port2
+show_num[1] <= show_control_ten_continuously:show_mux.port2
+show_num[2] <= show_control_ten_continuously:show_mux.port2
+show_num[3] <= show_control_ten_continuously:show_mux.port2
+show_num[4] <= show_control_ten_continuously:show_mux.port2
+show_num[5] <= show_control_ten_continuously:show_mux.port2
+show_num[6] <= show_control_ten_continuously:show_mux.port2
+show_place[0] <= show_control_ten_continuously:show_mux.port3
+show_place[1] <= show_control_ten_continuously:show_mux.port3
+show_place[2] <= show_control_ten_continuously:show_mux.port3
+show_place[3] <= show_control_ten_continuously:show_mux.port3
+show_place[4] <= show_control_ten_continuously:show_mux.port3
+show_place[5] <= show_control_ten_continuously:show_mux.port3
+sign_out <= four_choose_one_simple:select_one_simple_mux.port5
+clk_original => clk_original.IN1
+
+
+|Calculator|Plus4:plus_mux
+i0[0] => Add0.IN4
+i0[1] => Add0.IN3
+i0[2] => Add0.IN2
+i0[3] => Add0.IN1
+i1[0] => Add0.IN8
+i1[1] => Add0.IN7
+i1[2] => Add0.IN6
+i1[3] => Add0.IN5
+sum[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= <GND>
+sum[6] <= <GND>
+sum[7] <= <GND>
+
+
+|Calculator|Minus4:minus_mux
+i0[0] => LessThan0.IN4
+i0[0] => Add0.IN8
+i0[1] => LessThan0.IN3
+i0[1] => Add0.IN7
+i0[2] => LessThan0.IN2
+i0[2] => Add0.IN6
+i0[3] => LessThan0.IN1
+i0[3] => Add0.IN5
+i1[0] => LessThan0.IN8
+i1[0] => Add0.IN4
+i1[1] => LessThan0.IN7
+i1[1] => Add0.IN3
+i1[2] => LessThan0.IN6
+i1[2] => Add0.IN2
+i1[3] => LessThan0.IN5
+i1[3] => Add0.IN1
+sum[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sign <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|Multiply4:multiply_mux
+i0[0] => Mult0.IN3
+i0[1] => Mult0.IN2
+i0[2] => Mult0.IN1
+i0[3] => Mult0.IN0
+i1[0] => Mult0.IN7
+i1[1] => Mult0.IN6
+i1[2] => Mult0.IN5
+i1[3] => Mult0.IN4
+sum[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|four_choose_one:select_mux
+sel[0] => Mux0.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux2.IN5
+sel[0] => Mux3.IN5
+sel[0] => Mux4.IN5
+sel[0] => Mux5.IN5
+sel[0] => Mux6.IN5
+sel[0] => Mux7.IN5
+sel[1] => Mux0.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux2.IN4
+sel[1] => Mux3.IN4
+sel[1] => Mux4.IN4
+sel[1] => Mux5.IN4
+sel[1] => Mux6.IN4
+sel[1] => Mux7.IN4
+num_00[0] => Mux7.IN0
+num_00[1] => Mux6.IN0
+num_00[2] => Mux5.IN0
+num_00[3] => Mux4.IN0
+num_00[4] => Mux3.IN0
+num_00[5] => Mux2.IN0
+num_00[6] => Mux1.IN0
+num_00[7] => Mux0.IN0
+num_01[0] => Mux7.IN1
+num_01[1] => Mux6.IN1
+num_01[2] => Mux5.IN1
+num_01[3] => Mux4.IN1
+num_01[4] => Mux3.IN1
+num_01[5] => Mux2.IN1
+num_01[6] => Mux1.IN1
+num_01[7] => Mux0.IN1
+num_10[0] => Mux7.IN2
+num_10[1] => Mux6.IN2
+num_10[2] => Mux5.IN2
+num_10[3] => Mux4.IN2
+num_10[4] => Mux3.IN2
+num_10[5] => Mux2.IN2
+num_10[6] => Mux1.IN2
+num_10[7] => Mux0.IN2
+num_11[0] => Mux7.IN3
+num_11[1] => Mux6.IN3
+num_11[2] => Mux5.IN3
+num_11[3] => Mux4.IN3
+num_11[4] => Mux3.IN3
+num_11[5] => Mux2.IN3
+num_11[6] => Mux1.IN3
+num_11[7] => Mux0.IN3
+out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|four_choose_one_simple:select_one_simple_mux
+sel[0] => Mux0.IN5
+sel[1] => Mux0.IN4
+num_00 => Mux0.IN0
+num_01 => Mux0.IN1
+num_10 => Mux0.IN2
+num_11 => Mux0.IN3
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|counter:count_mux
+clk_original => clk~reg0.CLK
+clk_original => count[0].CLK
+clk_original => count[1].CLK
+clk_original => count[2].CLK
+clk_original => count[3].CLK
+clk_original => count[4].CLK
+clk_original => count[5].CLK
+clk_original => count[6].CLK
+clk_original => count[7].CLK
+clk_original => count[8].CLK
+clk_original => count[9].CLK
+clk_original => count[10].CLK
+clk_original => count[11].CLK
+clk_original => count[12].CLK
+clk_original => count[13].CLK
+clk_original => count[14].CLK
+clk_original => count[15].CLK
+clk_original => count[16].CLK
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|show_control_ten_continuously:show_mux
+ans_r[0] => Div0.IN14
+ans_r[0] => Add0.IN16
+ans_r[0] => Mod0.IN11
+ans_r[1] => Div0.IN13
+ans_r[1] => Add0.IN15
+ans_r[1] => Mod0.IN10
+ans_r[2] => Div0.IN12
+ans_r[2] => Add0.IN14
+ans_r[2] => Mod0.IN9
+ans_r[3] => Div0.IN11
+ans_r[3] => Add0.IN13
+ans_r[3] => Mod0.IN8
+ans_r[4] => Div0.IN10
+ans_r[4] => Add0.IN12
+ans_r[4] => Mod0.IN7
+ans_r[5] => Div0.IN9
+ans_r[5] => Add0.IN11
+ans_r[5] => Mod0.IN6
+ans_r[6] => Div0.IN8
+ans_r[6] => Add0.IN10
+ans_r[6] => Mod0.IN5
+ans_r[7] => Div0.IN7
+ans_r[7] => Add0.IN9
+ans_r[7] => Mod0.IN4
+clk => to_be_shown[0].CLK
+clk => to_be_shown[1].CLK
+clk => to_be_shown[2].CLK
+clk => to_be_shown[3].CLK
+clk => show_place[0]~reg0.CLK
+clk => show_place[1]~reg0.CLK
+clk => show_place[2]~reg0.CLK
+clk => show_place[3]~reg0.CLK
+clk => show_place[4]~reg0.CLK
+clk => show_place[5]~reg0.CLK
+clk => show_state~1.DATAIN
+show_num[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+show_num[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+show_num[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+show_num[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+show_num[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+show_num[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+show_num[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[0] <= show_place[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[1] <= show_place[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[2] <= show_place[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[3] <= show_place[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[4] <= show_place[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+show_place[5] <= show_place[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
